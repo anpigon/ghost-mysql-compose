@@ -7,6 +7,10 @@ You will need [docker](https://docs.docker.com/engine/install/) and [docker-comp
 
 For running this configuration you will need a machine with atleast 1GB of RAM. If your blog has estimate of less than 100K hits/day you will be fine with sqlite instead, consider using [ghost-sqlite-compose](https://github.com/linnik/ghost-sqlite-compose) which is more lightweight
 
+#### SSL
+
+SSL Certificate will be generated and refreshed automatically by `Traefik`. You only need to specify your domain and mail address for ACME notifications in a config file `.env`.
+
 #### Setup
 
 1. Clone this repo and create default config from template
