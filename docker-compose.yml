@@ -75,7 +75,7 @@ services:
   mysql:
     image: mysql:${MYSQL_VERSION}
     container_name: mysql
-    command: mysqld --performance_schema=off
+    command: --performance_schema=off
     restart: on-failure
     environment:
       - MYSQL_DATABASE=${MYSQL_GHOST_DB}
