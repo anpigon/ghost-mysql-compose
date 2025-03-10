@@ -6,7 +6,7 @@ services:
     ports:
       - "3001:2368"
     environment:
-      - url=http://${HOST}
+      - url=https://${HOST}
       - mail__transport=SMTP
       - mail__from=${MAIL_FROM}
       - mail__options__host=${MAIL_HOST}
